@@ -17,8 +17,6 @@ sys.path.append(os.getcwd())
 import allure
 from Page.duyaya_test import search
 from Base.get_devices import get_driver
-from Logs import duyaya_test_log
-mylogger=duyaya_test_log.Logger(logger='TestLog').getlog()
 
 customs_list = ['Cartoon', 'Video', 'Reading', 'Speaking', 'Game', 'Song', 'Report']
 pcica_list=['Song','Word','Reading','Game','Speaking','Video','Report']
@@ -42,7 +40,6 @@ class Test_1:
     # 滑动到如何上课
     def test_swit_click(self):
         self.obj.slide(155,2359,155,400,1000)
-        mylogger.info("滑动完毕")
         sleep(2)
         self.obj.click_who_word()
         print(22222222222222)
