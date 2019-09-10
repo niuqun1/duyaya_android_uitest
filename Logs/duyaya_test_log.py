@@ -31,9 +31,9 @@ class Logger(object):
         # 创建日志名称。
         rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
         #日志存储路径
-        log_path = os.path.dirname(os.getcwd()) + '/android/Logs/'
+        log_path = '/android/Logs/'
         print(log_path)
-        log_name = log_path + rq + '.Log'
+        log_name = "/Users/edz/Desktop/android/Logs"
         # 创建一个handler，用于写入日志文件
         fh = logging.FileHandler(log_name)
         fh.setLevel(logging.INFO)
