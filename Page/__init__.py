@@ -44,10 +44,11 @@ review=(By.XPATH,'//*[@resource-id="app"]/android.view.View[1]/android.view.View
 # 点击reciew课程关卡
 reviews=(By.XPATH,'//*[@text="Review"]')
 # 发现按钮
-discover=(By.NAME,"发现")
+discover=(By.XPATH,'//*[@resource-id="ai.zile.app:id/largeLabel"]')
 # 杜丫丫按钮
-duyaya=(By.NAME,"杜丫丫")
-my=(By.NAME,"我的")
+duyaya=(By.XPATH,'//*[@resource-id="ai.zile.app:id/nav_schedule"]')
+# wode
+my=(By.XPATH,'//*[@resource-id="ai.zile.app:id/nav_user"]')
 # 发现如何上课
 how_clss=(By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/android.widget.RelativeLayout/android.widget.RelativeLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView')
 # 练习客服

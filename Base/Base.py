@@ -18,7 +18,7 @@ import sys,os
 sys.path.append(os.getcwd())
 class Base:
     def __init__(self, driver):
-        # 初始化driver -- 供find_element 和 find_elements使用
+        #初始化driver -- 供find_element 和 find_elements使用
         self.driver = driver
 
     def search_element(self, loc, timeout=8, poll=0.1):
@@ -80,7 +80,8 @@ class Base:
         # 截图
         self.driver.get_screenshot_as_file(image_name)
         # 添加截图
-
+        with open(image_name, "rb") as f:
+            allure.attach("截图名字", f.read(), allure.attach_type.PNG)
 
     def get_toast(self, message, expect):
         """
@@ -93,9 +94,9 @@ class Base:
             xpath = "//*[contains(@text,'{}')]".format(message)
             toast_message = self.search_element((By.XPATH, xpath), timeout=10, poll=1).text
             assert toast_message == expect
-            # allure.attach("用例状态:", "成功")
+            allure.attach("用例状态:", "成功")
         except Exception as e:
-            # allure.attach("用例状态:", "执行失败")
+            allure.attach("用例状态:", "执行失败")
             self.get_screen()
             assert 1 == 2
     def driver_reset(self):

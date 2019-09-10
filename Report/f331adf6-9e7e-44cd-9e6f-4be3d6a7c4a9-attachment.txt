@@ -1,0 +1,3 @@
+duyaya_test.py              82 INFO     进入onthefarm课程
+duyaya_test.py              53 INFO     课程下载
+duyaya_test.py             129 INFO     课程内部返回 按钮

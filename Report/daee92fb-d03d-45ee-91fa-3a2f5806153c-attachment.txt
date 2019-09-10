@@ -1,0 +1,4 @@
+duyaya_test.py             106 INFO     进入发现如何上课
+duyaya_test.py             123 INFO     发现页如何上课返回 按钮
+duyaya_test.py             114 INFO     进入发现页面购买课程
+duyaya_test.py             126 INFO     购买课返回返回 按钮

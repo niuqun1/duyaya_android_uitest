@@ -23,7 +23,7 @@ def get_driver():
     :return:
     """
     desired_caps = {}
-    # 平台 - 必填
+    # 平台 - 必填z
     desired_caps['platformName'] = 'Android'
     # 系统版本 - 非必填，填写就必须正确
     desired_caps['platformVersion'] = '9'

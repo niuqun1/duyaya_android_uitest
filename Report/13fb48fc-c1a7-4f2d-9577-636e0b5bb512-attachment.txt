@@ -1,0 +1,1 @@
+duyaya_test.py              73 INFO     进入picnic课程

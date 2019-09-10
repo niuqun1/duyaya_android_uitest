@@ -17,7 +17,6 @@ sys.path.append(os.getcwd())
 import allure
 from Page.duyaya_test import search
 from Base.get_devices import get_driver
-
 customs_list = ['Cartoon', 'Video', 'Reading', 'Speaking', 'Game', 'Song', 'Report']
 pcica_list=['Song','Word','Reading','Game','Speaking','Video','Report']
 class Test_1:
@@ -52,26 +51,26 @@ class Test_1:
     def test_hungry(self):
         self.obj.click_hungry()
         # self.obj.click_download()
-        self.obj.for_a(pcica_list)
+        # self.obj.for_a(pcica_list)
         self.obj.click_return()
         # 进入picnic
     def test_picnic(self):
         self.obj.click_picnic()
         self.obj.click_download()
-        self.obj.for_a(pcica_list)
+        # self.obj.for_a(pcica_list)
         self.obj.click_return()
         sleep(1)
         self.obj.slide(155, 125, 155, 500, 1000)
     def test_click_what_rhis(self):
         self.obj.click_what_rhis()
         self.obj.click_download()
-        self.obj.for_a(pcica_list)
+        # self.obj.for_a(pcica_list)
         sleep(1)
         self.obj.click_return()
     def test_on_the_fqrm(self):
         self.obj.click_on_the_farm()
         self.obj.click_download()
-        self.obj.for_a(pcica_list)
+        # self.obj.for_a(pcica_list)
         sleep(1)
         self.obj.click_return()
     def test_click_review(self):
