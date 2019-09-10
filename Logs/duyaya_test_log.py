@@ -30,7 +30,7 @@ class Logger(object):
 
         # 创建日志名称。
         rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
-        # os.getcwd()获取当前文件的路径，os.path.dirname()获取指定文件路径的上级路径
+        #日志存储路径
         log_path = os.path.dirname(os.getcwd()) + '/android/Logs/'
         print(log_path)
         log_name = log_path + rq + '.Log'
